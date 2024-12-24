@@ -1,0 +1,90 @@
+:root {
+    --gray-100: hsl(0, 0%, 65%);
+    --gray-200: gray;
+    --gray-300: hsl(0, 0%, 30%);
+    --gray-500: #353538;
+    --gray-900: #202024;
+
+    --orange-400: rgb(252, 173, 27);
+    --orange-500: orange;
+    --orange-600: rgba(255, 166, 0, 0.945);
+
+    --white-500: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body, input, button {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    font-family: Arial, sans-serif;
+    background-color: var(--gray-900);
+    border-radius: 1rem;
+    max-width: 31.25rem;
+    overflow: hidden;
+}
+
+.display {
+    background: var(--gray-500);
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    font-size: 5rem;
+    border: none;
+    width: 100%;
+    color: var(--white-500);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+    padding: 1.5rem;
+}
+
+.btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--gray-300);
+    color: var(--white-500);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    background-color: var(--gray-200);
+}
+
+button:active {
+    background-color: var(--gray-100);
+}
+
+.operator-btn {
+    background-color: var(--orange-500);
+}
+
+.operator-btn:hover {
+    background-color: var(--orange-400);
+}
+
+.operator-btn:active {
+    background-color: var(--orange-600);
+}

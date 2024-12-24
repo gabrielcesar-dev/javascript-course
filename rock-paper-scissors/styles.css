@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: rgba(138, 138, 138, 0.63);
+}
+
+header {
+    width: 100%;
+}
+h1 {
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;  
+    color: rgb(66, 66, 66);
+}
+
+.buttons-display {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 2.5rem;
+}
+
+.buttons-display button {
+    border: none;
+    font-size: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 0 0.02rem;
+    line-height: 0;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(0, 217, 255);
+    box-shadow: 0 0 4px rgba(17, 201, 233, 0.616);
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.buttons-display button:hover {
+    background-color: rgb(17, 201, 233);
+    transform: translateY(-10px) rotate(360deg) scale(1.1);
+}
+
+.buttons-display button:active {
+    background-color: rgb(0, 217, 255);
+    transform: translateY(2px) scale(1.05);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.option-display {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.option-display label {
+    font-size: 1.4rem;
+    display: block;
+}
+
+.option-display span {
+    font-size: 1.2rem;
+}
+
+.player-option, .computer-option {
+    color: gray;
+}
+
+
+.result-display {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0.5rem auto;
+    color: gray;
+    transition: all 0.1s ease-in;
+}
+
+.score-display {
+    font-weight: bold;
+    text-align: center;
+}
+
+.score-display label {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.score-display span {
+    font-size: 1rem;
+}
+
+.player-score, .computer-score {
+    color: grey;
+}
+
+.win {
+    color: rgb(1, 209, 1);
+}
+
+.lose {
+    color: red;
+}
+

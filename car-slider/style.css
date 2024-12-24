@@ -1,0 +1,93 @@
+:root {
+    --black-400: hsla(0, 0%, 0%, 0.4);
+    --black-500: hsla(0, 0%, 0%, 0.5);
+    --black-600: hsla(0, 0%, 0%, 0.6);
+
+    --white-500: hsla(0, 0%, 100%, 0.3);
+}
+
+:focus {
+    outline: none;
+    box-shadow: 0 0 3px var(--white-500);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, button {
+    font-size: 1rem;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(./imgs/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.slides img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--black-500);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+button:active {
+    background-color: var(--black-600);
+}
+
+button:hover {
+    background-color: var(--black-400);
+}
+
+button.prev {
+    left: 0%;
+}
+
+button.next {
+    right: 0%;
+}
+
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+    
+}
+
+
+
